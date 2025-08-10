@@ -14,5 +14,7 @@ app.get('/', (req, res) => {
 
 // 启动服务器 - 不指定IP地址，默认监听所有网络接口
 app.listen(PORT, () => { 
-  console.log(`服务器运行在 http://localhost:${PORT}`); 
+  console.log(`服务器运行在端口 ${PORT}`); 
+  console.log(`- 本地访问: http://localhost:${PORT}`); 
+  console.log(`- 远程访问: http://您的EC2公网IP:${PORT}`); 
 });
